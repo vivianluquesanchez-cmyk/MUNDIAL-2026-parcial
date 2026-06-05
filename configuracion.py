@@ -27,6 +27,7 @@ def cargarEquipos():
 
 
 #Este hay que revisar porque mezcla cosas de la opcion 1 y 2 del menu principal
+#Solo hay que cargar los cruces, no los resultados
 def cargarPartidos():
     seguro = 0
     while seguro != 1:
