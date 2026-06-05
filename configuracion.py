@@ -1,3 +1,4 @@
+from archivos import cargarEnArchivo
 def crearTorneo():
     seguro=0
     while seguro!=1:
@@ -5,9 +6,8 @@ def crearTorneo():
         fechaIni=input("Ingrese fecha de inicio (DD/MM/AAAA): ")
         fechaFin=input("Ingrese fecha de la Final(DD/MM/AAAA):")
         seguro=int(input("Está seguro? Marque 1 para confirmar. "))
-    archivo=open("torneo.txt","a")
-    archivo.write(f"{nombreTor}-{fechaIni}-{fechaFin}\n") #Sujeto a cambios
-    archivo.close()
+    torneoTxt=f"{nombreTor}-{fechaIni}-{fechaFin}\n"
+    cargarEnArchivo("torneo.txt",torneoTxt)
     print("Torneo creado con éxito")
 
 def cargarEquipos():
@@ -21,11 +21,12 @@ def cargarEquipos():
         idEquipo = grupo + tel
         print("El id de la seleccion es : ",idEquipo)
         seguro = int(input("Esta seguro? Marque 1 para confirmar. "))
-    archivo=open("equipos.txt","a")
-    archivo.write(f"\n{pais}-{abrev}-{tel}-{conf}-{grupo}-{idEquipo}") #Sujeto a cambios
-    archivo.close()    
+    equipoTxt=f"{pais}-{abrev}-{tel}-{conf}-{grupo}-{idEquipo}\n"
+    cargarEnArchivo("equipos.txt",equipoTxt)
     print("Equipo cargado con éxito")
-        
+
+
+#Este hay que revisar porque mezcla cosas de la opcion 1 y 2 del menu principal
 def cargarPartidos():
     seguro = 0
     while seguro != 1:
