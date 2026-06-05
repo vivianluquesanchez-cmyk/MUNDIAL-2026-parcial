@@ -1,7 +1,7 @@
 import os
 from configuracion import crearTorneo,cargarEquipos,cargarPartidos
 from archivos import crear_archivo
-
+#Nota: Este no es el main del proyecto en si, es solo el programa de carga
 def menu():
     print("Menu de Carga")
     print("1) Crear Torneo")
