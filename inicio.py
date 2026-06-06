@@ -8,6 +8,7 @@ def cabecera():
     print("PUTO EL QUE LO LEA")
     print(datetime.now().strftime("%d/%m/%Y %H:%M"))
 def menu():
+    cabecera()
     print("Menu de Carga")
     print("1) Crear Torneo")
     print("2) Cargar Equipos")
