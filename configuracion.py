@@ -29,7 +29,8 @@ def cargarEquipos():
 #Este hay que revisar porque mezcla cosas de la opcion 1 y 2 del menu principal
 #Solo hay que cargar los cruces, no los resultados
 def cargarPartidos():
-    estadios=["SoFi Stadium","Estadio Azteca","AT&T Stadium","Arrowhead","Lincoln Financial",]
+    #La idea es que los partidos se generen solos, y vaya ciclando entre los estadios y horarios, a medida que vayan avanzanzdo las fechas.
+    estadios=["SoFi Stadium","Estadio Azteca","AT&T Stadium","Arrowhead","Lincoln Financial","MetLife Stadium","Estadio Monterrey"]
     horas=["13:00","16:00","19:00","22:00"]
     seguro = 0
     while seguro != 1:
@@ -39,8 +40,8 @@ def cargarPartidos():
         lugar =  input("Ingresar el lugar del partido : ")
         idLocal =  input("Local : ")
         idVisit = input("Visitante : ")
-        golesLocal = int(input("GOL Local : "))
-        golesVisit = int(input("GOL Visitante : "))
+        #golesLocal = int(input("GOL Local : "))
+        #golesVisit = int(input("GOL Visitante : "))
         #dependiendo de eso agregar para lo de penales
         seguro = int(input("Esta seguro? Marque 1 para confirmar. "))
     archivo=open("partidos.txt","a")
