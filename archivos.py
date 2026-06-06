@@ -8,7 +8,7 @@ def cargarEnArchivo(nombre,texto):
     archivo.write(texto)
     archivo.close()
 def cuentaLineas(nombre): #Sirve para ver si todos los equipos están cargados o no.
-    archivo=open(nombre,"a")
+    archivo=open(nombre,"r")
     lineaCnt=0
     for line in archivo:
         lineaCnt+=1
