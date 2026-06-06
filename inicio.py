@@ -1,7 +1,12 @@
 import os
 from configuracion import crearTorneo,cargarEquipos,cargarPartidos
 from archivos import crear_archivo
+from datetime import datetime
 #Nota: Este no es el main del proyecto en si, es solo el programa de carga
+def cabecera():
+    print ("ALGORITMOS Y ESTRUCTURAS DE DATOS - PROYECTO MUNDIAL ")
+    print("PUTO EL QUE LO LEA")
+    print(datetime.now().strftime("%d/%m/%Y %H:%M"))
 def menu():
     print("Menu de Carga")
     print("1) Crear Torneo")
