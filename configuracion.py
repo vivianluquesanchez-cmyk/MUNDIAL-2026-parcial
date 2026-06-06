@@ -29,6 +29,8 @@ def cargarEquipos():
 #Este hay que revisar porque mezcla cosas de la opcion 1 y 2 del menu principal
 #Solo hay que cargar los cruces, no los resultados
 def cargarPartidos():
+    estadios=["SoFi Stadium","Estadio Azteca","AT&T Stadium","Arrowhead","Lincoln Financial",]
+    horas=["13:00","16:00","19:00","22:00"]
     seguro = 0
     while seguro != 1:
         fecha =  input("Ingresar la fecha del partido : ")
